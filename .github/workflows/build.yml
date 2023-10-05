@@ -1,0 +1,14 @@
+name: Sampleworkflow
+on:
+workflow_dispatch: 
+push:
+    branches:
+      - master
+pull_request:  
+    branches:
+      - master
+    types: [ opened, reopened, synchronize ]
+jobs:
+  push_to_registry:
+    if: github.repository_owner == 'akhilamoyila9'
+    
