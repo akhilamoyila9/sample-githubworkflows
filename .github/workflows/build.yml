@@ -1,7 +1,7 @@
-name: Sampleworkflow
+name: Magma Build Docker Image Bazel Base & DevContainer
 on:
-workflow_dispatch: 
-push:
+  workflow_dispatch: null
+  push:
     branches:
       - master
 pull_request:  
